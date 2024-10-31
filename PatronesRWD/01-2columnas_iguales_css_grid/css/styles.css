@@ -41,7 +41,7 @@ h1 {
 /** CODIGO AQUI **/
 
 @media (min-width: 768px)  {
-    .dos_columnas{
+    .dos-columnas{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-columns: repeat(2, 50%);
