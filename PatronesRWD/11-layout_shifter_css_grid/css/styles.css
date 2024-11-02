@@ -49,3 +49,47 @@ p {
 
 
 /** CODIGO AQUI **/
+
+
+@media (min-width: 768px)  {
+    .layout_shifter{
+        display: grid;
+        grid-template-areas: "contenido"
+                             "inferior";
+    }
+
+    .sidebar{
+        grid-area: inferior;
+    }
+
+    .contenido-principal{
+        display: grid;
+        grid-template-areas: "area-1 area-2";
+        column-gap: 2rem;
+    }
+}
+
+
+@media (min-width: 992px)  {
+    .layout_shifter{
+        display: grid;
+        grid-template-areas: "contenido sidebar";
+        column-gap: 2rem;
+    }
+
+
+    .sidebar{
+        grid-area: sidebar;
+    }
+
+    .contenido-principal{
+        display: grid;
+        grid-area: contenido;
+        grid-template-areas: "area-1"
+                             "area-2";
+
+    }
+
+    
+    
+}
